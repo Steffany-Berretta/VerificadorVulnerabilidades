@@ -1,0 +1,2 @@
+Certificado SSL válido: ((('commonName', 'www.google.com'),),)
+
