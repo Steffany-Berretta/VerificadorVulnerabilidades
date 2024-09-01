@@ -118,12 +118,12 @@ def toggle_advanced_options():
     if advanced_frame.winfo_viewable():
         advanced_frame.pack_forget()
     else:
-        advanced_frame.pack(pady=5, anchor="ne")  # Coloca o frame no topo direito
+        advanced_frame.pack(pady=5, after=advanced_button, fill=tk.X)  # Coloca o frame debaixo do botão, preenchendo horizontalmente
 
 # Cria a janela principal
 window = tk.Tk()
 window.title("Ferramenta de Verificação de Vulnerabilidades")
-window.geometry('650x500')
+window.geometry('750x600')  # Aumenta o tamanho da janela para que tudo seja visível
 
 # Cria e posiciona os elementos na janela
 label_frame = tk.Frame(window)
